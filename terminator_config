@@ -1,0 +1,58 @@
+[global_config]
+  title_transmit_fg_color = "#20c4df"
+  title_transmit_bg_color = "#f3f3f3"
+  title_receive_fg_color = "#f0690d"
+  title_receive_bg_color = "#babdb6"
+  title_inactive_fg_color = "#f6129d"
+  title_inactive_bg_color = "#2e3436"
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
+  always_split_with_profile = True
+[keybindings]
+  new_tab = None
+  go_up = <Primary><Shift>k
+  go_down = <Primary><Shift>j
+  go_left = <Primary><Shift>h
+  go_right = <Primary><Shift>l
+  split_horiz = <Primary><Shift>Down
+  split_vert = <Primary><Shift>Right
+  close_term = <Primary><Shift>q
+  close_window = <Primary><Shift>Escape
+  resize_up = <Primary><Shift><Alt>Up
+  resize_down = <Primary><Shift><Alt>Down
+  resize_left = <Primary><Shift><Alt>Left
+  resize_right = <Primary><Shift><Alt>Right
+  new_terminator = <Primary><Shift>t
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+  [[Hemisu light]]
+    background_color = "#efefef"
+    cursor_color = "#FF0054"
+    foreground_color = "#444444"
+    palette = "#777777:#ff0055:#739100:#503d15:#538091:#5b345e:#538091:#999999:#999999:#d65e76:#9cc700:#947555:#9db3cd:#a184a4:#85b2aa:#bababa"
+  [[jz]]
+    background_color = "#ffffff"
+    cursor_color = "#20c4df"
+    cursor_color_fg = False
+    foreground_color = "#000000"
+    palette = "#2e3436:#f0690d:#f6129d:#24d881:#20c4df:#841fe8:#fce94f:#d3d7cf:#555753:#f0690d:#f6129d:#24d881:#20c4df:#841fe8:#fce94f:#eeeeec"
+[layouts]
+  [[default]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:27
+      maximised = True
+      fullscreen = False
+      size = 1920, 1016
+      title = zepfyr@ubuntu: ~
+      last_active_term = 81df49bf-2673-4cbb-bfc5-c3243ba85e1f
+      last_active_window = True
+    [[[terminal1]]]
+      type = Terminal
+      parent = child0
+      order = 0
+      profile = jz
+      uuid = 81df49bf-2673-4cbb-bfc5-c3243ba85e1f
+[plugins]
